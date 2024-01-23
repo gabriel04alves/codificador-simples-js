@@ -1,5 +1,6 @@
 body {
     background-color: #D8DFE8;
+
 }
 
 .header {
@@ -7,6 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 10vh;
+    /* width: 100%; */
     border-radius: 20px;
     margin: 1vh;
     background-color: #0A3871;
@@ -23,4 +25,34 @@ body {
     font-size: 2vh;
     text-transform: uppercase;
     color: #D8DFE8;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: fixed;
+    gap: 2.5%;
+    bottom: 0;
+    left: 1vh; 
+    right: 1vh; 
+    border-radius: 15px;
+    height: 5vh;
+    margin: 0 0 1vh 0 ;
+    background-color: #0A3871;
+    box-shadow:  20px -20px 60px #949494,
+                -20px 20px 60px #ffffff;
+}
+
+.line-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vh;
+}
+
+.text-footer {
+    text-decoration: none;
+    color: #D8DFE8;
+    font-weight: 300;
 }
