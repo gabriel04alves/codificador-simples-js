@@ -1,0 +1,26 @@
+body {
+    background-color: #D8DFE8;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    border-radius: 20px;
+    margin: 1vh;
+    background-color: #0A3871;
+    box-shadow:  20px 20px 60px #949494,
+                -20px -20px 60px #ffffff;
+    gap: 1%;
+}
+
+.icon-header {
+    height: 2.3em;
+}
+
+.header-title {
+    font-size: 2vh;
+    text-transform: uppercase;
+    color: #D8DFE8;
+}
