@@ -56,3 +56,40 @@ body {
     color: #D8DFE8;
     font-weight: 300;
 }
+
+.content {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr;
+    padding: 0 5% 0 5%;
+    background-color: red;
+    margin: 5% 0 5% 0;
+    height: 70vh;
+}
+
+.input-main {
+    display: flex;
+    margin: 15%;
+    
+}
+
+.msg-main {
+    background-color: aqua;
+    display: flex;
+    border-radius: 20px;
+    height: 80%;
+    align-self: center;
+}
+
+.buttons {
+    display: flex;
+    align-self: end;
+    justify-content: start;
+    width: 100%;
+}
+
+.button-main {
+    border-radius: 20px;
+    height: 5vh;
+    width: 100%;
+}
