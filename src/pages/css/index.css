@@ -1,0 +1,124 @@
+body {
+    background-color: #D8DFE8;
+}
+
+.header, .footer {
+    display: flex;
+    justify-content: center;
+    background-color: #0A3871;
+    border-radius: 15px;
+}
+
+.header {
+    align-items: center;
+    height: 10vh;
+    margin: 1vh;
+    box-shadow:  1.5vh 1.5vh 4vh #949494,
+                -1.5vh -1.5vh 4vh #ffffff;
+}
+
+.icon-header, .icon-footer {
+    height: 3.5vh;
+}
+
+.header-title {
+    font-size: 2vh;
+    color: #D8DFE8;
+}
+
+.footer {
+    flex-direction: row;
+    position: fixed;
+    gap: 2.5%;
+    bottom: 0;
+    left: 1vh; 
+    right: 1vh; 
+    height: 5vh;
+    margin: 0 0 1vh 0 ;
+    box-shadow:  20px -20px 60px #949494,
+                -20px 20px 60px #ffffff;
+    margin-top: 5%;
+}
+
+.media-footer {
+    display: flex;
+    align-items: center;
+    font-size: 1.5vh;
+}
+
+.text-footer {
+    text-decoration: none;
+    color: #D8DFE8;
+    font-weight: 300;
+}
+
+.content {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr;
+    padding: 5% 5% 0 5%;
+    /* background-color: red; */
+    /* height: 100%; */
+    gap: 5%;
+    padding-top: 5%;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-main {
+    display: flex;
+}
+
+.input textarea {
+    /* border: 0; */
+    width: 95%;
+    min-height: 45vh;
+    border: none;
+    outline: none;
+    padding: 5vh;
+    font-size: 2vh;
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+
+.msg-main {
+    background-color: #FFFFFF;
+    display: flex;
+    border-radius: 15px;
+    height: 100%;
+    align-self: top;
+    padding: 5%;
+}
+
+.buttons {
+    display: flex;
+    /* position: absolute; */
+    /* justify-content: space-around; */
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.button-main {
+    border-radius: 20px;
+    height: 5vh;
+    width: 20vh;
+    border: solid #0A3871 1.5px;
+    font-weight: 300;
+}
+
+.button-main::after {
+    transform: translateX(50px);
+}
+
+#criptografar {
+    background-color: #0A3871;
+    color: #FFF;
+}
+
+#descriptografar {
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
