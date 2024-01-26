@@ -87,31 +87,32 @@ body {
 .msg-main {
     background-color: #FFFFFF;
     display: flex;
+    flex-direction: column;
+    
     border-radius: 15px;
-    height: 100%;
-    align-self: top;
-    padding: 5%;
+    height: 50%;
+    padding: 15%;
+
 }
 
 .buttons {
     display: flex;
-    /* position: absolute; */
-    /* justify-content: space-around; */
     flex-direction: row;
     justify-content: space-around;
 }
 
-.button-main {
+.button-main, .copy-btn {
     border-radius: 20px;
     height: 5vh;
     width: 20vh;
     border: solid #0A3871 1.5px;
     font-weight: 300;
+    font-size: 1.5vh;
 }
 
-.button-main::after {
-    transform: translateX(50px);
-}
+/* .button-main::after {
+    color
+} */
 
 #criptografar {
     background-color: #0A3871;
@@ -121,4 +122,25 @@ body {
 #descriptografar {
     background-color: #D8DFE8;
     color: #0A3871;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    margin-top: 10vh;
+}
+
+.gif-load {
+    width: 20vh;
+    border-radius: 100vh;
+    align-self: center;
+}
+
+.load-text {
+    font-size: 1.9vh;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
 }

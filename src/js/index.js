@@ -1,15 +1,8 @@
-function teste(msg) {
-    console.log(msg)
-}
-
-let responseDiv = document.createElement('div');
+// let responseDiv = document.createElement('div');
 
 document.getElementById('criptografar').addEventListener('click', function() {
     
     let contentInput = document.getElementById('content-text').value; 
-    
-    console.log(contentInput);
-
     const encryptedContent = contentInput
         .replace(/e/g, "enter")
         .replace(/i/g, "imes")
@@ -25,10 +18,14 @@ document.getElementById('criptografar').addEventListener('click', function() {
         .replace(/6/g, "fsd")
         .replace(/7/g, "sdf")
         .replace(/8/g, "ioi")
-        .replace(/9/g, "fsd")
-        
+        .replace(/9/g, "fsd")      
 
-    responseDiv.innerHTML = encryptedContent;
+    document.getElementById('msg-main').innerHTML = 
+        `<p class='res-text'>${encryptedContent}</p> 
+        <div class='copy'>
+            <button class='copy-btn' id='copy'>Copiar </button> 
+        </div>
+        `;
     let responseContainer = document.getElementById('msg-main')
     responseContainer.appendChild(responseDiv)
 });
@@ -36,10 +33,6 @@ document.getElementById('criptografar').addEventListener('click', function() {
 document.getElementById('descriptografar').addEventListener('click', function() {
     
     let contentInput = document.getElementById('content-text').value; 
-    
-    console.log(contentInput);
-
-
     const decryptedContent = contentInput
         .replace(/enter/g, "e")
         .replace(/imes/g, "i")
@@ -57,8 +50,7 @@ document.getElementById('descriptografar').addEventListener('click', function() 
         .replace(/ioi/g, "8")
         .replace(/fsd/g, "9")
 
-    responseDiv.innerHTML = decryptedContent;
+    document.getElementById('msg-main').innerHTML = decryptedContent;
     let responseContainer = document.getElementById('msg-main')
     responseContainer.appendChild(responseDiv)
 });
-
