@@ -2,6 +2,9 @@
     .content {
         grid-template-rows: 2fr;
         grid-template-columns: 1fr;
-        margin-top: 5%;
+        margin-top: 8%;
+    }
+    .input textarea {
+        min-height: 25vh;
     }
 }

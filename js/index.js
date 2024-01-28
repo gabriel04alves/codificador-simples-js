@@ -19,16 +19,25 @@ document.getElementById('criptografar').addEventListener('click', function() {
         .replace(/7/g, "sdf")
         .replace(/8/g, "ioi")
         .replace(/9/g, "tsx")      
+    if (contentInput == '') {
+        document.getElementById('msg-main').innerHTML = 
+            `<p class='res-text' data-aos="zoom-in" id='res-text'>
+                Não há nada por aqui...
+                <br><br>
+                Parece que você não digitou nada. <b> Tente outra vez! </b>    
+            </p> 
+            `;
+    } else {
+        document.getElementById('msg-main').innerHTML = 
+            `<p class='res-text' data-aos="zoom-in" id='res-text'>${encryptedContent}</p> 
+            <div class='copy' data-aos="zoom-in">
+                <button class='copy-btn' id='copy' onclick="copy()">Copiar </button> 
+            </div>
+            `;
+        let responseContainer = document.getElementById('msg-main')
+        responseContainer.appendChild(responseDiv)
 
-    document.getElementById('msg-main').innerHTML = 
-        `<p class='res-text' id='res-text'>${encryptedContent}</p> 
-        <div class='copy'>
-            <button class='copy-btn' id='copy' onclick="copy()">Copiar </button> 
-            <iframe class="gif-load" src="https://giphy.com/embed/l0Iy64hqCfCMXWYlq"  frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-        </div>
-        `;
-    let responseContainer = document.getElementById('msg-main')
-    responseContainer.appendChild(responseDiv)
+    }
 });
 
 document.getElementById('descriptografar').addEventListener('click', function() {
@@ -50,15 +59,23 @@ document.getElementById('descriptografar').addEventListener('click', function() 
         .replace(/sdf/g, "7")
         .replace(/ioi/g, "8")
         .replace(/tsx/g, "9")
-
-    document.getElementById('msg-main').innerHTML = 
-        `<p class='res-text' id='res-text'>${decryptedContent}</p> 
-        <div class='copy'>
-            <button class='copy-btn' id='copy' onclick="copy()">Copiar </button> 
-            <iframe class="gif-load" src="https://giphy.com/embed/l0Iy64hqCfCMXWYlq"  frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-        </div>`;
-    let responseContainer = document.getElementById('msg-main')
-    responseContainer.appendChild(responseDiv)
+    if (contentInput == ''){
+        document.getElementById('msg-main').innerHTML = 
+            `<p class='res-text' data-aos="zoom-in" id='res-text'>
+                Não há nada por aqui...
+                <br><br>
+                Parece que você não digitou nada. <b> Tente outra vez! </b>    
+            </p> 
+            `;
+    } else {
+        document.getElementById('msg-main').innerHTML = 
+            `<p class='res-text' data-aos="zoom-in" id='res-text'>${decryptedContent}</p> 
+            <div class='copy' data-aos="zoom-in">
+                <button class='copy-btn' id='copy' onclick="copy()">Copiar </button> 
+            </div>`;
+        let responseContainer = document.getElementById('msg-main')
+        responseContainer.appendChild(responseDiv)
+    };
 });
 
 function copy() {
