@@ -88,9 +88,9 @@ body {
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    
+    margin-bottom: 15vh;
     border-radius: 15px;
-    height: 50%;
+    /* height: ; */
     padding: 15%;
 
 }
@@ -133,8 +133,8 @@ body {
 }
 
 .gif-load {
-    width: 20vh;
-    border-radius: 100vh;
+    /* height: 100%; */
+    /* border-radius: 25px; */
     align-self: center;
 }
 
@@ -143,4 +143,16 @@ body {
     font-weight: 400;
     font-style: italic;
     text-align: center;
+}
+
+.swal2-popup {
+    width: 40vh ;
+    background-color: #0A3871;
+    color: #FFF;
+
+}
+.swal2-title {
+    font-size: 2vh;
+    font-weight: 300;
+
 }
