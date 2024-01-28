@@ -39,11 +39,9 @@ body {
                 -20px 20px 60px #ffffff;
     margin-top: 5%;
 }
-.media-footer, .input, .buttons, .copy, .load-text {
-    display: flex;
-}
 
 .media-footer {
+    display: flex;
     align-items: center;
     font-size: 1.5vh;
 }
@@ -65,7 +63,12 @@ body {
 }
 
 .input {
+    display: flex;
     flex-direction: column;
+}
+
+.input-main {
+    display: flex;
 }
 
 .input textarea {
@@ -92,6 +95,7 @@ body {
 }
 
 .buttons {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 5%;    
@@ -117,22 +121,22 @@ body {
     color: #0A3871;
 }
 
-.copy, .gif-load {
-    align-self: center;
-    flex-direction: column;
-}
-
 .copy {
+    display: flex;
+    flex-direction: column;
     gap: 5vh;
+    align-items: center;
     background-color: #FFF;
     margin-top: 5vh;
 }
 
 .gif-load {
+    align-self: center;
     width: 100%;
 }
 
 .load-text {
+    display: flex;
     flex-direction: column;
     font-size: 1.8vh;
     font-weight: 400;
