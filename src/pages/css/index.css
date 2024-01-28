@@ -18,7 +18,7 @@ body {
 }
 
 .icon-header, .icon-footer {
-    height: 3.5vh;
+    height: 3.3vh;
 }
 
 .header-title {
@@ -49,7 +49,8 @@ body {
 .text-footer {
     text-decoration: none;
     color: #D8DFE8;
-    font-weight: 300;
+    font-weight: 200;
+    margin-left: 3px;
 }
 
 .content {
@@ -88,6 +89,8 @@ body {
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    gap: 3vh;
     margin-bottom: 15vh;
     border-radius: 15px;
     /* height: ; */
@@ -126,22 +129,28 @@ body {
 
 .copy {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 5vh;
     align-items: center;
     background-color: #FFF;
-    margin-top: 10vh;
+    margin-top: 5vh;
 }
 
 .gif-load {
     /* height: 100%; */
     /* border-radius: 25px; */
     align-self: center;
+    width: 100%;
 }
 
 .load-text {
-    font-size: 1.9vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8vh;
     font-weight: 400;
-    font-style: italic;
+    /* font-style: italic; */
+    /* gap: 0.3vh; */
     text-align: center;
 }
 

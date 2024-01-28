@@ -24,6 +24,7 @@ document.getElementById('criptografar').addEventListener('click', function() {
         `<p class='res-text' id='res-text'>${encryptedContent}</p> 
         <div class='copy'>
             <button class='copy-btn' id='copy' onclick="copy()">Copiar </button> 
+            <iframe class="gif-load" src="https://giphy.com/embed/l0Iy64hqCfCMXWYlq"  frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
         </div>
         `;
     let responseContainer = document.getElementById('msg-main')
@@ -54,6 +55,7 @@ document.getElementById('descriptografar').addEventListener('click', function() 
         `<p class='res-text' id='res-text'>${decryptedContent}</p> 
         <div class='copy'>
             <button class='copy-btn' id='copy' onclick="copy()">Copiar </button> 
+            <iframe class="gif-load" src="https://giphy.com/embed/l0Iy64hqCfCMXWYlq"  frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
         </div>`;
     let responseContainer = document.getElementById('msg-main')
     responseContainer.appendChild(responseDiv)
