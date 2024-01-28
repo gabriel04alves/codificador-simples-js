@@ -133,6 +133,7 @@ body {
 }
 
 .load-text {
+    flex-direction: column;
     font-size: 1.8vh;
     font-weight: 400;
     text-align: center;
